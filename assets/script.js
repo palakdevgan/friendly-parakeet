@@ -1,3 +1,5 @@
+//Get password length and applied validations such as avoid blank,null,string values and
+//number should be between 8 to 128.
 var getPasswordLength=function(){
   var length ="";
 
@@ -8,7 +10,7 @@ var getPasswordLength=function(){
   return length;
 }
 
-
+//Function for generating password with atleast one character type
 function generatePassword() {
 var passwordLength=getPasswordLength();
 var isLowercase=false;
@@ -17,29 +19,30 @@ var isNumeric =false;
 var isSpecial=false;
 var chars="";
 while(isLowercase === false && isUppercase === false && isNumeric === false && isSpecial ===false){
+window.alert("Please select atleast one character type from the following:");
 isLowercase = window.confirm("Do you want to include Lowercase Letters?");
 console.log("isLowercase: "+isLowercase);
 if (isLowercase){
   chars += "abcdefghijklmnopqrstuvwxyz";
-  console.log(chars);
+  //console.log(chars);
 }
 isUppercase = window.confirm("Do you want to include Uppercase Letters?");
 console.log("isUppercase: "+isUppercase);
 if (isUppercase){
   chars += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  console.log(chars);
+  //console.log(chars);
 }
 isNumeric = window.confirm("Do you want to include Numeric Values?");
 console.log("isNumeric: "+isNumeric);
 if (isNumeric){
   chars += "0123456789";
-  console.log(chars);
+  //console.log(chars);
 }
 isSpecial = window.confirm("Do you want to include Special Characters?");
 console.log("isSpecial: "+isSpecial);
 if (isSpecial){
   chars += "!@#$%^&*()_+?><:{}[]";
-  console.log(chars);
+  //console.log(chars);
 }
 }
 
