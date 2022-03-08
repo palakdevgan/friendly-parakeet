@@ -7,7 +7,7 @@ This application allows users to generate a random password based on criteria th
 * Javascript
 
 ## Screenshot
-![Screenshot](https://palakdevgan.github.io/friendly-parakeet/)
+![Screenshot](https://github.com/palakdevgan/friendly-parakeet/blob/main/assets/Screenshot.jpg?raw=true)
 
 ## Website
 https://palakdevgan.github.io/friendly-parakeet/
